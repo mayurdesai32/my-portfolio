@@ -1,0 +1,21 @@
+.height {
+  min-height: 100vh;
+}
+
+#title {
+  font-size: 25pt;
+}
+
+.s-about .skills .skill {
+  list-style: none;
+  background: #eee;
+  color: #333;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  font-family: 'montserrat-medium', sans-serif;
+  margin-right: 1.5rem;
+}

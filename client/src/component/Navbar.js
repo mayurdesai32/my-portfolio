@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from '../logo/apple-touch-icon.png';
+
 const Navbar = () => {
   return (
     <>
       <nav
         id='navbar-example2'
-        className={`navbar  navbar-expand-lg fixed-top  navbar-dark  `}
+        className='navbar  navbar-expand-lg fixed-top  navbar-dark'
       >
         <button
           className='navbar-toggler'
@@ -19,9 +19,6 @@ const Navbar = () => {
           <span className='navbar-toggler-icon'></span>
         </button>
 
-        {/* <a className='navbar-brand' href='#home'>
-          <img src={logo} className='navbarIcon' alt='logo' />
-        </a> */}
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav ml-auto mt-2 mt-lg-0'>
             <li className='nav-item active'>

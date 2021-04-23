@@ -6,6 +6,7 @@ import '../app.css';
 const Workpage = () => {
   const [data, setData] = useState([]);
   const getData = async () => {
+    // const res = await fetch('http://localhost:5000', {
     const res = await fetch('/project', {
       method: 'GET',
       headers: {

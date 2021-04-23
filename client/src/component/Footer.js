@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='row'>
           <div className='col text-center'>
             <img src={logo} alt='logo' className='footerIcon' />
-            <div className='mb-2'>
+            <div>
               <a
                 href='https://github.com/mayurdesai32'
                 className='btn'

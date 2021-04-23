@@ -9,6 +9,7 @@ const Contact = () => {
     subject: '',
     message: '',
   });
+  const [loading, setloading] = useState(false);
   let name, value;
   const handleInput = (e) => {
     name = e.target.name;
@@ -17,6 +18,7 @@ const Contact = () => {
   };
   const Postdata = async (e) => {
     e.preventDefault();
+    setloading(true);
     const { name, email, subject, message } = user;
     const res = await fetch('/contact', {
       method: 'POST',
@@ -35,10 +37,14 @@ const Contact = () => {
     // window.alert(data.status);
     if (data.error === 'please filled all field') {
       window.alert('please filled all field');
+      setloading(false);
     } else if (data.status === 'ERROR') {
       window.alert('message not send');
+      setloading(false);
     } else {
       window.alert('message send ');
+      setuser({ name: '', email: '', subject: '', message: '' });
+      setloading(false);
     }
   };
 
@@ -102,13 +108,19 @@ const Contact = () => {
                     value={user.message}
                   ></textarea>
                 </div>
-                <button
-                  href='/'
-                  className='btn btn-block btn-success text-uppercase'
-                  onClick={Postdata}
-                >
-                  submit
-                </button>
+                {loading ? (
+                  <h4 className='text-center btn btn-block btn-primary'>
+                    !SENDING...
+                  </h4>
+                ) : (
+                  <button
+                    href='/'
+                    className='btn btn-block btn-success text-uppercase'
+                    onClick={Postdata}
+                  >
+                    submit
+                  </button>
+                )}
               </form>
             </div>
           </div>

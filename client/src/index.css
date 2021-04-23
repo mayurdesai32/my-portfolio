@@ -42,13 +42,10 @@
   background-color: #000000 !important;
 }
 
-.maketransparent,
-.contactinput {
+.maketransparent {
   background-color: transparent !important;
 }
-.contactinput {
-  color: #cae8ca !important;
-}
+
 .makefixed {
   position: fixed;
 }
@@ -81,18 +78,63 @@
   background-color: rgb(11, 23, 31);
   color: #f1f1f1;
 }
+
+/*project*/
 .project {
   color: #000000;
 }
+.project_readmore {
+  border: none !important;
+  color: #c83cb9;
+  border-color: white;
+  background-color: white;
+}
+.project_Link_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.project_Link_flex > a {
+  width: 150px;
+  /* border-radius: 0%; */
+}
+.project:hover {
+  transform: scale(1.05);
+}
+.project {
+  transition: transform 1s;
+}
+
+.project_Link_flex > a:hover {
+  width: 140px;
+  transform: scale(1.15);
+  background: rgb(88, 15, 76);
+}
+.project_Link_flex > a {
+  transition: transform 0.5s;
+}
+/*CONTACT*/
 .CONTACT {
   background-color: rgb(8, 19, 27);
   color: #f1f1f1;
 }
-.footer {
-  background-color: black;
-  color: #f1f1f1 !important ;
-  min-height: 31vh;
+.contact_submit {
+  font-size: 18px !important;
+  /* font-weight: bold !important; */
 }
+.contact_sending {
+  font-size: 18px !important;
+}
+.contact_submit:hover {
+  transform: scale(1.05);
+}
+.contactinput {
+  background-color: transparent !important;
+}
+.contactinput {
+  color: #cae8ca !important;
+}
+
 .profiledetail {
   font-size: 20px;
 }
@@ -105,10 +147,38 @@
   width: 50px;
   height: 80px !important;
 }
+
+/* .nav-link:active {
+  color: red !important;
+} */
+.nav-link:hover {
+  /* border-bottom: 1px solid rgb(88, 15, 76); */
+  color: #c83cb9 !important;
+}
+
+/*footer*/
+.footer {
+  background-color: black;
+  color: #f1f1f1 !important ;
+  min-height: 31vh;
+}
+
 .footerIcon {
   padding-bottom: -2vh !important;
   margin-bottom: -10vh !important;
   margin-top: -7vh;
   width: 250px;
   height: 250px !important;
+  color: #cae8ca !important;
+}
+.footer_link {
+  color: #cae8ca !important;
+  font-size: 25px;
+  font-weight: 550;
+  margin-top: 2vh;
+  padding: 10px;
+  text-decoration: none !important;
+}
+.footer_link:hover {
+  color: #c83cb9 !important;
 }

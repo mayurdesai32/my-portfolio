@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Project = (props) => {
   const [readmore, setreadmore] = useState(false);
-  const { title, img, desc, link } = props.element;
+  const { title, img, desc, link, code } = props.element;
   const key = props.element.id;
   return (
     <>
@@ -22,7 +22,7 @@ const Project = (props) => {
               {readmore ? desc : `${desc.substring(0, 50)}`}
               {/* {desc} */}
               <button
-                className='btn  hieght'
+                className='project_readmore'
                 onClick={() => {
                   setreadmore(!readmore);
                 }}
@@ -31,17 +31,11 @@ const Project = (props) => {
               </button>
             </p>
 
-            <div className='d-flex justify-content-around  align-items-center '>
-              <a
-                href={link}
-                className='btn btn-block btn-success width_30 text-uppercase'
-              >
+            <div className='project_Link_flex '>
+              <a href={code} className='btn  btn-success text-uppercase'>
                 SEE code
               </a>
-              <a
-                href={link}
-                className='btn btn-block btn-success width_30 text-uppercase'
-              >
+              <a href={link} className='btn  btn-success  text-uppercase'>
                 SEE LIVE
               </a>
             </div>

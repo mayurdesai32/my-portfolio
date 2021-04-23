@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Title from './Title';
 import Project from './Project';
 import '../app.css';
-// import data from './data';
+import Data from './Data.js';
 const Workpage = () => {
   const [data, setData] = useState([]);
   const getData = async () => {
@@ -19,7 +19,8 @@ const Workpage = () => {
   };
 
   useEffect(() => {
-    getData();
+    // getData();
+    setData(Data);
   }, []);
   return (
     <div className='Workpage' id='work'>

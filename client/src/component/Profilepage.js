@@ -44,36 +44,55 @@ const Profilepage = () => {
             </p>
           </div>
           <div className='col-md-6 py-5 '>
-            <h3
-              data-aos='fade-right'
-              // data-aos-easing='linear'
-              data-aos-duration='1500'
-              className='my-4 mx-3'
-            >
-              Skill
-            </h3>
-            <div
-              data-aos='fade-right'
-              // data-aos-easing='linear'
-              data-aos-duration='1500'
-              className='d-flex flex-wrap justify-content-start'
-            >
-              <div className=' h5 skill mx-3'>Javascript</div>
-              <div className='h5 skill mx-3'>React</div>
-              <div className='h5 skill mx-3'>Node</div>
-              <div className='h5 skill mx-3'>Express</div>
-              <div className='h5 skill mx-3'>Mongodb</div>
-              <div className='h5 skill mx-3'>Html</div>
+            <div className='mb-5 pb-4'>
+              <h3
+                data-aos='fade-right'
+                // data-aos-easing='linear'
+                data-aos-duration='1500'
+                className='my-4 mx-3'
+              >
+                Skill
+              </h3>
+              <div
+                data-aos='fade-right'
+                // data-aos-easing='linear'
+                data-aos-duration='1500'
+                className='d-flex flex-wrap justify-content-start'
+              >
+                <div className='h5 skill mx-3'>Html</div>
+                <div className='h5 skill mx-3'>Css</div>
+                <div className='h5 skill mx-3'>Sass</div>
+                <div className='h5 skill mx-3'>Javascript</div>
+                <div className='h5 skill mx-3'>React</div>
+                <div className='h5 skill mx-3'>Node</div>
+                <div className='h5 skill mx-3'>Express</div>
+                <div className='h5 skill mx-3'>Mongodb</div>
+                <div className='h5 skill mx-3'>And more</div>
+              </div>
             </div>
+            <div className=' mt-5'>
+              <h3
+                data-aos='fade-right'
+                // data-aos-easing='linear'
+                data-aos-duration='1500'
+                className='my-4 mx-3'
+              >
+                Tools
+              </h3>
+              <div
+                data-aos='fade-right'
+                // data-aos-easing='linear'
+                data-aos-duration='1500'
+                className='d-flex flex-wrap justify-content-start'
+              >
+                <div className='h5 skill mx-3'>Visual Studio Code</div>
+                <div className='h5 skill mx-3'>chrome developer tools</div>
+                <div className='h5 skill mx-3'>Git</div>
+                <div className='h5 skill mx-3'>Postman</div>
 
-            {/* 
-          <span style={{ width: 80 }} className='bg-danger'>
-            Reactjs
-          </span> */}
-            {/* 
-          <span style={{ width: 80 }} className='bg-danger'>
-            Reactjs
-          </span> */}
+                <div className='h5 skill mx-3'>And more</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

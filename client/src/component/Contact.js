@@ -109,16 +109,16 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 {loading ? (
-                  <h4 className='text-center btn btn-block btn-primary'>
+                  <div className='contact_sending btn btn-block btn-primary'>
                     !SENDING...
-                  </h4>
+                  </div>
                 ) : (
                   <button
                     href='/'
-                    className='btn btn-block btn-success text-uppercase'
+                    className='contact_submit btn btn-block btn-success '
                     onClick={Postdata}
                   >
-                    submit
+                    SUBMIT
                   </button>
                 )}
               </form>
@@ -126,9 +126,9 @@ const Contact = () => {
           </div>
           <div className='col-md-5 py-5 px-5'>
             <form className='ml-4'>
-              <div className='form-group contactinput mt-5'>
+              <div className='form-group mt-5'>
                 <h5 className=' text-uppercase text-dark mb-1'>phone</h5>
-                <p className='h5 text-uppercase  mt-2 mb-1'>
+                <p className='h5 text-uppercase mt-2 mb-1'>
                   mobile: (+91) 7745811201
                 </p>
               </div>

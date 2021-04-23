@@ -10,18 +10,18 @@ const Footer = () => {
             <div>
               <a
                 href='https://github.com/mayurdesai32'
-                className='btn'
+                className='footer_link'
                 target='blank'
               >
-                <h4>GITHUB</h4>
+                GITHUB
               </a>
-              <span>|</span>
+              |
               <a
                 href='https://linkedin.com/in/mayur-desai-3801a6209'
                 target='blank'
-                className='btn'
+                className='footer_link'
               >
-                <h4>LINKEDIN</h4>
+                LINKEDIN
               </a>
             </div>
           </div>

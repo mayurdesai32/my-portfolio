@@ -2,11 +2,10 @@ import React, { useEffect, useState } from 'react';
 import Title from './Title';
 import Project from './Project';
 import '../app.css';
-import Data from './Data.js';
+// import Data from './Data.js';
 const Workpage = () => {
   const [data, setData] = useState([]);
   const getData = async () => {
-    // const res = await fetch('http://localhost:5000', {
     const res = await fetch('/project', {
       method: 'GET',
       headers: {
@@ -19,8 +18,8 @@ const Workpage = () => {
   };
 
   useEffect(() => {
-    // getData();
-    setData(Data);
+    getData();
+    // setData(Data);
   }, []);
   return (
     <div className='Workpage' id='work'>

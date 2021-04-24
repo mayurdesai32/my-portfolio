@@ -91,7 +91,11 @@
   margin: -30px 0 !important;
 }
 .Project_img:hover {
-  transform: scale(1.02, 1.08);
+  transform: scale(1, 1.08);
+}
+
+.project_detail {
+  margin-bottom: -1vh;
 }
 
 .project_readmore {
@@ -99,6 +103,7 @@
   color: #c83cb9;
   border-color: white;
   background-color: white;
+  /* margin-top: -13vh !important; */
 }
 
 .project_Link_flex {
@@ -109,6 +114,12 @@
 .project_Link_flex > a {
   width: 150px;
   /* border-radius: 0%; */
+}
+
+@media screen and (max-width: 680px) {
+  .project_Link_flex > a {
+    width: 120px;
+  }
 }
 .project:hover {
   transform: scale(1.05);

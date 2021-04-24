@@ -35,7 +35,7 @@ const Contact = () => {
     const data = await res.json();
     console.log(data);
     // window.alert(data.status);
-    if (data.error === 'please filled all field') {
+    if (data.status === 'please filled all field') {
       window.alert('please filled all field');
       setloading(false);
     } else if (data.status === 'ERROR') {

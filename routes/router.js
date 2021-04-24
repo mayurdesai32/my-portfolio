@@ -1,4 +1,4 @@
-// const Projectlist = require('../models/projectlistSchema');
+const Projectlist = require('../models/projectlistSchema');
 const express = require('express');
 const router = express.Router();
 ///////for contact form//////
@@ -43,7 +43,7 @@ router.get('/project', async (req, res) => {
     console.log(result);
     res.json(result);
   } catch (err) {
-    console.log(err);
+    console.log(err.message);
   }
 });
 

@@ -24,25 +24,26 @@ const Project = (props) => {
         >
           <img src={img} alt={title} className='card-img-top Project_img' />
           <div className='card-body'>
-            <h4 className='card-title text-center text-capitalize'>{title}</h4>
+            <h4 className='text-center text-primary text-capitalize'>
+              {title}
+            </h4>
             <center>
               <h5>Technologies:-</h5>
             </center>
             <p className='project_detail'>{detail}</p>
             <div style={readmoretext}>
-              <p className='text-center'>Summary</p>
+              <h5 className='text-center'>Summary</h5>
               <p> {readmore ? desc : ''}</p>
             </div>
             {/* {readmore ? desc : `${desc.substring(0, 50)}`} */}
             <button
-              className='project_readmore'
+              className='project_readmore '
               onClick={() => {
                 setreadmore(!readmore);
               }}
             >
-              {readmore ? 'show less' : 'show more'}
+              <p>{readmore ? 'show less' : 'show more'}</p>
             </button>
-
             <div className='project_Link_flex '>
               <a
                 href={code}

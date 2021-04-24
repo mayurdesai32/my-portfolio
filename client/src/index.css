@@ -93,10 +93,10 @@
 .Project_img:hover {
   transform: scale(1, 1.08);
 }
-
+/* 
 .project_detail {
   margin-bottom: -1vh;
-}
+} */
 
 .project_readmore {
   border: none !important;

@@ -129,7 +129,7 @@ const Contact = () => {
               <div className='form-group mt-5'>
                 <h5 className=' text-uppercase text-dark mb-1'>phone</h5>
                 <p className='h5 text-uppercase mt-2 mb-1'>
-                  mobile: (+91) 7745811201
+                  mobile: (+91) 9146209072
                 </p>
               </div>
 

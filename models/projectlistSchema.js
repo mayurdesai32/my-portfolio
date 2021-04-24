@@ -5,6 +5,7 @@ const projectlistSchema = new mongoose.Schema({
   desc: { type: String, required: true },
   link: { type: String, required: true },
   code: { type: String, required: true },
+  detail: { type: String, required: true },
 });
 
 const Projectlist = mongoose.model('PROJECTLIST', projectlistSchema);

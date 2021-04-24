@@ -3,11 +3,12 @@ dotenv.config({ path: './config.env' });
 const path = require('path');
 const express = require('express');
 const mongoose = require('mongoose');
+require('./db/conn');
 const cors = require('cors');
 const app = express();
 const router = require('./routes/router');
 const PORT = process.env.PORT;
-require('./db/conn');
+
 app.use(cors());
 app.use(express.json());
 app.use('/', router);

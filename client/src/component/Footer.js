@@ -24,6 +24,8 @@ const Footer = () => {
                 LINKEDIN
               </a>
             </div>
+
+            <p className='footer_trademark'>Handcrafted by © Mayur Desai</p>
           </div>
         </div>
       </div>

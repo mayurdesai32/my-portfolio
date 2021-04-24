@@ -1,39 +1,39 @@
-const Projectlist = require('../models/projectlistSchema');
+// const Projectlist = require('../models/projectlistSchema');
 const express = require('express');
 const router = express.Router();
-
-const sgMail = require('@sendgrid/mail');
 ///////for contact form//////
+const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 router.post('/contact', (req, res) => {
   const { name, email, message, subject } = req.body;
   if (!name || !email || !subject || !message) {
     // res.status(422).json({ error: 'please filled all field' });
     res.status(422).json({ status: 'please filled all field' });
-  }
-  const msg = {
-    to: 'msdesai32@gmail.com',
-    from: 'msdesai32@gmail.com',
-    subject: 'message from portfolio',
-    text: 'and easy to do anywhere, even with Node.js',
-    html: `<p>Name: ${name}</p>
+  } else {
+    const msg = {
+      to: 'msdesai32@gmail.com',
+      from: 'msdesai32@gmail.com',
+      subject: 'message from portfolio',
+      text: 'and easy to do anywhere, even with Node.js',
+      html: `<p>Name: ${name}</p>
           <p>Email: ${email}</p>
         <p> subject: ${subject}</p>
         <p>Message: ${message}</p>`,
-  };
-  (async () => {
-    try {
-      await sgMail.send(msg);
-      console.log('send');
-      res.json('send');
-    } catch (error) {
-      console.error(error);
+    };
+    (async () => {
+      try {
+        await sgMail.send(msg);
+        console.log('send');
+        res.json('send');
+      } catch (error) {
+        console.error(error);
 
-      if (error.response) {
-        console.error(error.response.body);
+        if (error.response) {
+          console.error(error.response.body);
+        }
       }
-    }
-  })();
+    })();
+  }
 });
 
 ////////for project data/////

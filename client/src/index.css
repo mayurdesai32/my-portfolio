@@ -83,12 +83,24 @@
 .project {
   color: #000000;
 }
+.Project_img {
+  /* width: 330px !important; */
+  transition: transform 0.5s;
+  height: 300px !important;
+  object-fit: scale-down !important;
+  margin: -30px 0 !important;
+}
+.Project_img:hover {
+  transform: scale(1.02, 1.08);
+}
+
 .project_readmore {
   border: none !important;
   color: #c83cb9;
   border-color: white;
   background-color: white;
 }
+
 .project_Link_flex {
   display: flex;
   flex-direction: row;
@@ -169,10 +181,10 @@
   margin-top: -7vh;
   width: 250px;
   height: 250px !important;
-  color: #cae8ca !important;
+  color: #f1f1f1 !important;
 }
 .footer_link {
-  color: #cae8ca !important;
+  color: #f1f1f1 !important;
   font-size: 25px;
   font-weight: 550;
   margin-top: 2vh;
@@ -181,4 +193,9 @@
 }
 .footer_link:hover {
   color: #c83cb9 !important;
+}
+
+.footer_trademark {
+  padding-top: 2vh;
+  font-size: 15px !important;
 }

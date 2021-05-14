@@ -183,15 +183,16 @@
 .footer {
   background-color: black;
   color: #f1f1f1 !important ;
-  min-height: 31vh;
+  /* min-height: 31vh; */
 }
 
 .footerIcon {
-  padding-bottom: -2vh !important;
-  margin-bottom: -10vh !important;
-  margin-top: -7vh;
+  padding-bottom: 2vh !important;
+  /* margin-bottom: -10vh !important; */
+  /* margin-top: -7vh; */
+  margin-top: 2vh;
   width: 250px;
-  height: 250px !important;
+  height: 180px !important;
   color: #f1f1f1 !important;
 }
 .footer_link {

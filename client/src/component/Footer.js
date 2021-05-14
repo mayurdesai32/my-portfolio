@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../logo/apple-touch-icon.png';
+import logo from '../logo/new/logod.png';
 const Footer = () => {
   return (
     <div className='footer'>

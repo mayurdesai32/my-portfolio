@@ -121,13 +121,14 @@
     width: 120px;
   }
 }
+/*
 .project:hover {
   transform: scale(1.05);
 }
 .project {
   transition: transform 1s;
 }
-
+  */
 .project_Link_flex > a:hover {
   width: 140px;
   transform: scale(1.15);
